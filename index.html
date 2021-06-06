@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Pesquisa de Usuários</title>
+  </head>
+  <body>
+    <h1 class="pesquisa">Pesquisa de Usuarios</h1>
+    <div class="search-container">
+      <form>
+        <label>
+          Busca:
+          <input
+            id="inputName"
+            type="text"
+            placeholder="Digite um nome para buscar"
+          />
+        </label>
+      </form>
+      <a class="waves-effect waves-light btn">Buscar</a>
+    </div>
+    <div class="people-container">
+      <div class="people-list">
+        <h5>Usuários encotrados (<span id="countPeopleFound"></span>)</h5>
+        <div id="tabFoundPeople"></div>
+      </div>
+      <div class="people-list">
+        <h5>Estatísticas</h5>
+        <h6>Sexo Masculino <span id="totalHomens"></span></h6>
+        <h6>Sexo Femino: <span id="totalMulheres"></span></h6>
+        <h6>Soma das Idades: <span id="somaIdades"></span></h6>
+        <h6>Media Idades: <span id="mediaIdades"></span></h6>
+        <div id="tabEstatisticas"></div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
